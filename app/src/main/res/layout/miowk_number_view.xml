@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="88dp"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:background="#FFF7DA">
+
+    <ImageView
+        android:id="@+id/ic_numView"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:src="@mipmap/ic_launcher_round"
+        android:background="#FFF7DA"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/miowk_num_View"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/ic_numView"
+        android:orientation="vertical"
+        android:background="#FD8E09"
+        android:padding="16dp"
+        >
+
+        <TextView
+            android:id="@+id/miowk_numTV"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Miowk Number"
+            android:textColor="#FFFFFF"
+            android:textAlignment="viewStart"
+            />
+
+        <TextView
+            android:id="@+id/eng_numTV"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:text="English Number"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_play_arrow_white_24dp"
+        android:layout_marginRight="16dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>
